@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>KX Viagens</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <p>KX VIAGENS</p>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#packages">Pacotes</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div id="home" class="header-content">
+            <h1>KX Viagens</h1>
+            <p>Desfrute do momento, como se fosse o último. Junte-se a nós para aproveitar momentos íncriveis!</p>
+            <button>Saiba mais</button>
+
+        </div>
+
+    </header>
+    <section id="packages" class="packages">
+        <h2 class="packages-title">Conheça nossos pacotes</h2>
+        <div class="card-packages">
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Promoção</p>
+                </div>
+                <div class=" card-tag card-tag-bottom">
+                    <p>R$ 1500,00</p>
+                </div>
+                <img class="card-image" src="imagens/andre-tan-UVzDdeAMhkA-unsplash.jpg" alt="Foto de Miami">
+                <div class="card-content">
+                    <p>Pacote Miami 4 dias</p>
+                    <ul>
+                        <li><i data-feather="globe"></i>Networking</li>
+                        <li><i data-feather="map-pin"></i> Os melhores locais</li>
+                        <li><i data-feather="coffee"></i>Degusstar das melhores comidas</li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Promoção</p>
+                </div>
+                <div class=" card-tag card-tag-bottom">
+                    <p>R$ 2500,00</p>
+                </div>
+                <img class="card-image" src="imagens/damiano-baschiera-Fk-fyXmewNY-unsplash.jpg" alt="Dublin-Irlanda">
+                <div class="card-content">
+                    <p>Pacote Irlanda 5 dias</p>
+                    <ul>
+                        <li><i data-feather="globe"></i>Networking</li>
+                        <li><i data-feather="map-pin"></i> Vsita ao Temple Bar</li>
+                        <li><i data-feather="coffee"></i>Saborear o café Irlandês</li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="card">
+                <div class=" card-tag card-tag-bottom">
+                    <p>R$ 3500,00</p>
+                </div>
+                <img class="card-image" src="imagens/jura-bakx-uDCogpgtGew-unsplash.jpg" alt="Cracovia-Polonia">
+                <div class="card-content">
+                    <p>Pacote Polônia 7 dias</p>
+                    <ul>
+                        <li><i data-feather="globe"></i>Networking</li>
+                        <li><i data-feather="map-pin"></i> Visita a Auschwitz</li>
+                        <li><i data-feather="coffee"></i>Degustação das melhores vodkas</li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services" class="services">
+        <h2 class="services-title">Serviços</h2>
+        <div class="services-cards">
+            <div class="card">
+                
+                <div class="card-content">
+                    <i data-feather="map"></i>
+                    <h3>Tours guiados</h3>
+                    <p>Os tours guiados são passeios que são realizados com o auxílio de um guia, alguém que vai dar informações sobre aqueles locais visitados. </p>
+                    <button>Saiba mais</button>
+                </div>
+
+                
+            </div>
+
+            <div class="card">
+                
+                <div class="card-content">
+                    <i data-feather="camera"></i>
+                    <h3>Fotografias profissionais</h3>
+                    <p>Nossos fotografos estão acostumados a registrar os melhores momentos das viagens, para que você aproveite a paisagem sem se preocupar . </p>
+                    <button>Saiba mais </button>
+                </div>
+
+                
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <i data-feather="navigation"></i>
+                    <h3>Aluguel de veículos</h3>
+                    <p>Para os clientes que preferem se aventurar sozinhos e tenham mais liberdade, oferecemos um serviço de aluguel de veículo. </p>
+                    <button>Saiba mais</button>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="card-contact">
+            <h3>Entre em contato</h3>
+            <ul>
+                <li> <i data-feather="map-pin"></i> Rua Antônio Minervino Vasconcelos</li>
+                <li> <i data-feather="camera"></i> contato@kxviagens.com</li>
+                <li> <i data-feather="camera"></i> (55) 9999-9999</li>
+               
+            </ul>
+        </div>
+        <div id="map"></div>
+    </section>
+    
+    <script>
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+        feather.replace()
+        
+        function initMap() {
+          const uluru = { lat: -25.344, lng: 131.036 };
+          // The map, centered at Uluru
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+          });
+          const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+          });
+        }
+    </script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?&callback=initMap&libraries=&v=weekly"
+    async
+  ></script>
+</body>
+
+</html>

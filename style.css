@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    width: 100vw;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+header {
+    color: white;
+    height: calc(100vh - 80px);
+    background: no-repeat center/cover url('imagens/joshua-earle-ICE__bo2Vws-unsplash.jpg');
+}
+
+        header nav {
+            display: flex;
+            justify-content: space-around;
+            margin: 0 30px;
+        }
+
+            header nav p {
+                font-weight: bold;
+                align-self: center;
+                }
+
+                 header nav ul {
+                    list-style: none;
+                    display: flex;
+                 }
+
+                    header nav ul li {
+                        padding: 8px;
+                        margin: 0 12px;
+                    }
+                        header nav ul li:hover{
+                        background-color:   #FF8239;
+                        border-radius: 3px;
+                            transition: 0.2s ease-in-out ;
+                        }
+                             .header-content {
+                                max-width: 400px;
+                                margin: 70px auto;
+                                text-align: center;
+                              }
+                        
+                                .header-content h1 {
+                                    margin-bottom: 10px;
+                                    font-size: 4em;
+                                }
+
+button {
+    padding: 10px 15px;
+    
+    border-radius: 8px;
+    border: 0;
+    background-color: #FF8239;
+    color: inherit;
+    
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    
+    cursor: pointer;
+}
+        button:hover{
+            background-color:#ff6f1c;
+            transition: 0.3s ease-in-out;
+            transform:scale(1.1); 
+
+        }
+
+
+/* PACOTES*/
+
+.packages {
+    /* height: 500px; */
+    background-color: #c3c3ca;
+    padding: 15px;
+  
+}
+
+.packages .packages-title {
+    width: 100%;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.packages .card-packages {
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.packages .card {
+    width: 250px;
+    height: 350px;
+    border-radius: 24px 0;
+    background-color: #ecebeb;
+    margin: 30px;
+    position: relative;
+    box-shadow: 3px 4px 8px #383838 ;
+}
+
+.packages .card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0;
+    object-fit: cover;
+}
+
+.packages .card-content {
+    padding: 0 15px;
+}
+
+.packages .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.packages .card-content p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.packages .card-content ul li {
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.packages .card-content li svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.packages .card .card-tag-top {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background-color: #FF8239;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.packages .card .card-tag-bottom {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background-color: #2A1FFF;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+}
+
+.packages .card .card-tag p {
+    margin: 0;
+    font-size: .8rem;
+    color: white;
+    font-weight: bold;
+}
+
+/* SERVIÇOS*/
+.services {
+    padding: 15px;
+    
+   
+}
+
+.services .services-title {
+    text-align: center;
+    margin: 30px 0 40px 0;
+}
+
+.services .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 20px;
+}
+
+.services .services-cards {
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.services .card .card-content{
+    height: 300px;
+    text-align: center;
+    margin-top:30px ;
+
+}
+
+.services .card svg {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    transition: all 1s;
+}
+.services .card svg:hover{
+    stroke: #2A1FFF;
+    transform: scale(1.1);
+}
+
+.services .card p {
+color:#4e4e4e;
+font-size: .8rem;
+text-align: center;
+}
+
+
+.services button{
+    background-color: #2A1FFF;
+    margin: 20px;
+    color: white;
+
+   
+}
+
+.services button:hover{
+    background-color:  rgb(17, 0, 255);
+    color: white;
+    transition: 0.3s ease-in-out;
+    transform:scale(1.1);
+}
+  
+/* map*/
+#map {
+    height: 400px;
+    
+    width: 100%;
+    
+  }
+  .contact{
+      padding: 60px;
+    background-color: #c3c3ca;
+   
+      position: relative;
+  }
+  .contact .card-contact{
+      width: 350px;
+      height: 300px;
+      background-color:white;
+      position: absolute;
+      z-index: 99;
+
+      border-radius: 8px;
+
+      top: calc(50% - 150px);
+      left: calc(20% - 175px);
+
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 0 1px 6px 0 rgba(32, 33, 36 ,28);
+  }
+
+  .contact .card-contact h3{
+      padding-left: 50px;
+     text-align: left;
+  }
+  .contact .card-contact li{
+      font-size: .8rem;
+      color: gray;
+      font-weight: bold;
+
+      display: flex;
+      align-items: center;
+  }
+  .contact .card-contact li svg{
+      width: 16px;
+      margin: 15px;
+  }
+
+  /* ESPECIAL PARA MAPA*/
+  @media(max-width:950px){
+      .contact{
+          padding: 60px 0;
+      }
+      .contact .card-contact{
+          left: 40px;
+      }
+  }
+  @media(max-width:800px){
+    
+    .contact {
+        padding:30px 0;
+    }
+    .contact .card-contact{
+        position: static;
+        margin: 40px auto;
+    }
+}
+/* RESPONSIVIDADE */
+
+
+
+@media (max-width:480px) {
+    body {
+        margin-bottom: 55px;
+    }
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+         align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 55px;
+        
+        background-color: rgb(230, 123, 36);
+        font-weight: bold;
+        z-index: 10;
+
+    }
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
